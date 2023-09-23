@@ -1,58 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { Button, FlatList } from 'react-native'
-import styled from 'styled-components/native'
 import { onAuthenticate, checkHardware } from '../components/utility/expoAuth'
 import { TodoItem, TodoState } from '../type/types'
-// css with styled-components
-const Container = styled.View`
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-const TODOInput = styled.TextInput`
-  width: 80%;
-  margin: 10px;
-  border-width: 2px;
-  border-color: #000;
-  height: 30px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-`
-
-const TodoButton = styled.TouchableOpacity`
-  background-color: #000;
-  border-radius: 6px;
-  width: 60%;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 10px;
-`
-
-const TodoButtonText = styled.Text`
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-`
-
-const TodoView = styled.View`
-  border: 1px solid #1e90ff;
-  border-radius: 5px;
-  margin-bottom: 12px;
-  width: 380px;
-  flex-direction: row;
-  align-items: center;
-`
-
-const TodoText = styled.Text`
-  color: black;
-  padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  flex: 1;
-`
-
+import {
+    Container,
+    TODOInput,
+    TodoButton,
+    TodoButtonText,
+    TodoView,
+    TodoText,
+  } from '../components/styles/StyledComponents'; // Import the styled components
+  
 const MainScreen: React.FC = () => {
   // State to manage the TODO data
   const [todoState, setTodoState] = useState<TodoState>({
