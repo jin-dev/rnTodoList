@@ -1,5 +1,4 @@
-// StyledComponents.tsx
-
+// Styled-Component for the list
 import styled from 'styled-components/native';
 
 export const Container = styled.View`

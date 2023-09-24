@@ -1,5 +1,6 @@
 import * as LocalAuthentication from 'expo-local-authentication';
 
+//Check hardware compatibility
 async function checkHardware() {
   try {
     const compatible = await LocalAuthentication.hasHardwareAsync();
@@ -8,7 +9,7 @@ async function checkHardware() {
     console.log(e);
   }
 }
-
+//Active expo-auth
 function onAuthenticate(): Promise<boolean> {
   const auth = LocalAuthentication.authenticateAsync({
     promptMessage: 'Please type your PIN code',

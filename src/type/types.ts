@@ -1,3 +1,4 @@
+//Type declearations for the list
 interface TodoItem {
   id: number;
   title: string;

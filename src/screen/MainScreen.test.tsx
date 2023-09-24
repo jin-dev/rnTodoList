@@ -29,6 +29,7 @@ describe('MainScreen', () => {
     // Trigger the "ADD" button click
     fireEvent.press(addButton);
 
+    // it waits to get the testID
     await waitFor(() => getByTestId('todo-item-0'));
 
     // Check if the new TODO item is added to the list

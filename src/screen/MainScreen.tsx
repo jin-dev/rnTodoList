@@ -21,6 +21,7 @@ const MainScreen: React.FC = () => {
 
   useEffect(() => {
     // Check hardware capabilities when the component mounts
+    // eslint-disable-next-line no-void
     void checkHardware();
   }, []);
 
@@ -101,6 +102,7 @@ const MainScreen: React.FC = () => {
     </TodoView>
   );
 
+  //Displays ToDO List
   return (
     <Container>
       <TODOInput
