@@ -11,7 +11,7 @@ async function checkHardware() {
 
 function onAuthenticate(): Promise<boolean> {
   const auth = LocalAuthentication.authenticateAsync({
-    promptMessage: 'Authenticate',
+    promptMessage: 'Please type your PIN code',
     fallbackLabel: 'Enter Password',
   });
   return auth

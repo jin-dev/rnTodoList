@@ -8,6 +8,7 @@ It allows you to add, edit, and delete tasks in your todo list.<br>Additionally,
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
+- [Sample](#sample)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -23,7 +24,14 @@ Before you begin, ensure you have met the following requirements:
 3. An emulator or a physical device for testing the app.
 4. make sure there is PIN code on your device or emulator.
 
---
+---
+
+## Sample[](#sample)
+
+- ![Sample](https://drive.google.com/uc?export=view&id=1Oz3imxpwZg_UPR8zsYTXGk67Ujg7vUM8)
+
+- it will ask you to enter PIN Codes when the buttons(add, edit, delete) are triggered.
+  ![Sample](https://drive.google.com/uc?export=view&id=1fB5loOAilE64oRKhgRYzYct8JLl5QfcW)
 
 ## Installation[](#installation)
 
@@ -39,7 +47,7 @@ yarn
 
 to run this TODO app on your development,
 
-- start the Expo development(Android)
+- start the Expo development
 
 ```
 yarn android // for android
